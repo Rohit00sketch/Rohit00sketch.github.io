@@ -1,0 +1,896 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Rohit Kumar - Data Scientist with 2+ years of experience in ML, Analytics, and Data Engineering">
+    <title>Rohit Kumar | Data Scientist</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Theme Toggle -->
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+        <i class="fas fa-moon"></i>
+    </button>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">RK</div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <button class="mobile-menu-toggle" id="mobileMenuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        Hi, I'm <span class="gradient-text">Rohit Kumar</span>
+                    </h1>
+                    <h2 class="hero-subtitle">Data Scientist</h2>
+                    <p class="hero-description">
+                        Transforming data into actionable insights | Building end-to-end ML solutions that drive business value
+                    </p>
+                    <div class="hero-cta">
+                        <a href="#projects" class="btn btn-primary">View Projects</a>
+                        <a href="Rohit_kumar_DataScientist.pdf" class="btn btn-secondary" download>
+                            <i class="fas fa-download"></i> Download Resume
+                        </a>
+                    </div>
+                    <div class="hero-links">
+                        <a href="https://github.com/Rohit00sketch" target="_blank" rel="noopener noreferrer" class="social-link">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/rohit-kumar-mlds/" target="_blank" rel="noopener noreferrer" class="social-link">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://leetcode.com/" target="_blank" rel="noopener noreferrer" class="social-link">
+                            <i class="fas fa-code"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="data-visualization">
+                        <canvas id="heroChart"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p class="about-intro">
+                        Data Scientist at Go Digit Life Insurance Limited with 1.5+ years of experience delivering data-driven solutions 
+                        in the insurance domain. Promoted from Graduate Trainee Engineer to Data Scientist, demonstrating strong technical capabilities 
+                        and business impact in building ML models and analytics solutions.
+                    </p>
+                    <div class="about-highlights">
+                        <div class="highlight-card">
+                            <div class="highlight-icon">
+                                <i class="fas fa-brain"></i>
+                            </div>
+                            <div class="highlight-content">
+                                <h3>Applied ML & Analytics</h3>
+                                <p>Expert in building production-grade ML models, from data preprocessing to deployment and monitoring</p>
+                            </div>
+                        </div>
+                        <div class="highlight-card">
+                            <div class="highlight-icon">
+                                <i class="fas fa-rocket"></i>
+                            </div>
+                            <div class="highlight-content">
+                                <h3>Business Impact Focus</h3>
+                                <p>Proven track record of translating complex data into actionable insights that drive measurable business outcomes</p>
+                            </div>
+                        </div>
+                        <div class="highlight-card">
+                            <div class="highlight-icon">
+                                <i class="fas fa-cogs"></i>
+                            </div>
+                            <div class="highlight-content">
+                                <h3>End-to-End Ownership</h3>
+                                <p>Comfortable owning the entire ML lifecycle - from problem definition to model deployment and optimization</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-stats">
+                    <div class="stat-card">
+                        <div class="stat-number" data-target="1.5">0</div>
+                        <div class="stat-label">Years Experience</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number" data-target="15">0</div>
+                        <div class="stat-label">Projects Completed</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number" data-target="500">0</div>
+                        <div class="stat-label">LeetCode Problems</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <p class="section-subtitle">End-to-end ML solutions with measurable business impact</p>
+            
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <div class="project-tags">
+                            <span class="tag">Machine Learning</span>
+                            <span class="tag">Python</span>
+                        </div>
+                    </div>
+                    <h3 class="project-title">Predictive Analytics Platform</h3>
+                    <p class="project-problem"><strong>Problem:</strong> Manual forecasting led to 20% inventory waste</p>
+                    <p class="project-description">
+                        Built an automated forecasting system using ensemble methods (XGBoost, LSTM) to predict demand patterns
+                    </p>
+                    <div class="project-metrics">
+                        <div class="metric">
+                            <span class="metric-value">92%</span>
+                            <span class="metric-label">Accuracy</span>
+                        </div>
+                        <div class="metric">
+                            <span class="metric-value">15%</span>
+                            <span class="metric-label">Cost Reduction</span>
+                        </div>
+                        <div class="metric">
+                            <span class="metric-value">< 100ms</span>
+                            <span class="metric-label">Latency</span>
+                        </div>
+                    </div>
+                    <div class="project-tech">
+                        <span>Python</span>
+                        <span>Scikit-learn</span>
+                        <span>TensorFlow</span>
+                        <span>Docker</span>
+                        <span>AWS</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/Rohit00sketch" target="_blank" class="project-link">
+                            <i class="fab fa-github"></i> Code
+                        </a>
+                        <a href="#" class="project-link">
+                            <i class="fas fa-external-link-alt"></i> Live Demo
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <i class="fas fa-comments"></i>
+                        </div>
+                        <div class="project-tags">
+                            <span class="tag">NLP</span>
+                            <span class="tag">Deep Learning</span>
+                        </div>
+                    </div>
+                    <h3 class="project-title">Customer Sentiment Analysis Engine</h3>
+                    <p class="project-problem"><strong>Problem:</strong> Manual review of 10K+ customer feedbacks monthly</p>
+                    <p class="project-description">
+                        Developed NLP pipeline using transformer models to classify sentiment and extract key themes from customer feedback
+                    </p>
+                    <div class="project-metrics">
+                        <div class="metric">
+                            <span class="metric-value">88%</span>
+                            <span class="metric-label">F1-Score</span>
+                        </div>
+                        <div class="metric">
+                            <span class="metric-value">95%</span>
+                            <span class="metric-label">Time Saved</span>
+                        </div>
+                        <div class="metric">
+                            <span class="metric-value">Real-time</span>
+                            <span class="metric-label">Processing</span>
+                        </div>
+                    </div>
+                    <div class="project-tech">
+                        <span>Python</span>
+                        <span>BERT</span>
+                        <span>PyTorch</span>
+                        <span>FastAPI</span>
+                        <span>MongoDB</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/Rohit00sketch" target="_blank" class="project-link">
+                            <i class="fab fa-github"></i> Code
+                        </a>
+                        <a href="#" class="project-link">
+                            <i class="fas fa-file-alt"></i> Case Study
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <div class="project-tags">
+                            <span class="tag">Clustering</span>
+                            <span class="tag">Analytics</span>
+                        </div>
+                    </div>
+                    <h3 class="project-title">Customer Segmentation & Churn Prediction</h3>
+                    <p class="project-problem"><strong>Problem:</strong> High churn rate (22%) with no targeted retention</p>
+                    <p class="project-description">
+                        Implemented unsupervised learning for segmentation and supervised models for churn prediction with SHAP explainability
+                    </p>
+                    <div class="project-metrics">
+                        <div class="metric">
+                            <span class="metric-value">85%</span>
+                            <span class="metric-label">Precision</span>
+                        </div>
+                        <div class="metric">
+                            <span class="metric-value">30%</span>
+                            <span class="metric-label">Churn ↓</span>
+                        </div>
+                        <div class="metric">
+                            <span class="metric-value">$2M</span>
+                            <span class="metric-label">Revenue Saved</span>
+                        </div>
+                    </div>
+                    <div class="project-tech">
+                        <span>Python</span>
+                        <span>K-Means</span>
+                        <span>Random Forest</span>
+                        <span>SHAP</span>
+                        <span>Tableau</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/Rohit00sketch" target="_blank" class="project-link">
+                            <i class="fab fa-github"></i> Code
+                        </a>
+                        <a href="#" class="project-link">
+                            <i class="fas fa-external-link-alt"></i> Dashboard
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <i class="fas fa-eye"></i>
+                        </div>
+                        <div class="project-tags">
+                            <span class="tag">Computer Vision</span>
+                            <span class="tag">CNN</span>
+                        </div>
+                    </div>
+                    <h3 class="project-title">Image Recognition System</h3>
+                    <p class="project-problem"><strong>Problem:</strong> Manual quality inspection causing bottlenecks</p>
+                    <p class="project-description">
+                        Built CNN-based automated quality inspection system with real-time defect detection and classification
+                    </p>
+                    <div class="project-metrics">
+                        <div class="metric">
+                            <span class="metric-value">94%</span>
+                            <span class="metric-label">Accuracy</span>
+                        </div>
+                        <div class="metric">
+                            <span class="metric-value">70%</span>
+                            <span class="metric-label">Faster</span>
+                        </div>
+                        <div class="metric">
+                            <span class="metric-value">Real-time</span>
+                            <span class="metric-label">Detection</span>
+                        </div>
+                    </div>
+                    <div class="project-tech">
+                        <span>Python</span>
+                        <span>TensorFlow</span>
+                        <span>OpenCV</span>
+                        <span>ResNet</span>
+                        <span>Flask</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/Rohit00sketch" target="_blank" class="project-link">
+                            <i class="fab fa-github"></i> Code
+                        </a>
+                        <a href="#" class="project-link">
+                            <i class="fas fa-play"></i> Demo
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project 5 -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <i class="fas fa-database"></i>
+                        </div>
+                        <div class="project-tags">
+                            <span class="tag">ETL</span>
+                            <span class="tag">Data Pipeline</span>
+                        </div>
+                    </div>
+                    <h3 class="project-title">Automated Data Pipeline & Analytics</h3>
+                    <p class="project-problem"><strong>Problem:</strong> Manual data processing taking 8+ hours daily</p>
+                    <p class="project-description">
+                        Designed scalable ETL pipeline processing 500GB+ daily data from multiple sources with automated reporting
+                    </p>
+                    <div class="project-metrics">
+                        <div class="metric">
+                            <span class="metric-value">99.5%</span>
+                            <span class="metric-label">Uptime</span>
+                        </div>
+                        <div class="metric">
+                            <span class="metric-value">90%</span>
+                            <span class="metric-label">Time Saved</span>
+                        </div>
+                        <div class="metric">
+                            <span class="metric-value">500GB+</span>
+                            <span class="metric-label">Daily Data</span>
+                        </div>
+                    </div>
+                    <div class="project-tech">
+                        <span>Python</span>
+                        <span>Apache Airflow</span>
+                        <span>SQL</span>
+                        <span>AWS S3</span>
+                        <span>Snowflake</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/Rohit00sketch" target="_blank" class="project-link">
+                            <i class="fab fa-github"></i> Code
+                        </a>
+                        <a href="#" class="project-link">
+                            <i class="fas fa-file-alt"></i> Documentation
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project 6 -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <div class="project-tags">
+                            <span class="tag">Recommendation</span>
+                            <span class="tag">ML</span>
+                        </div>
+                    </div>
+                    <h3 class="project-title">Personalized Recommendation Engine</h3>
+                    <p class="project-problem"><strong>Problem:</strong> Low engagement rate (12%) with generic content</p>
+                    <p class="project-description">
+                        Implemented hybrid recommendation system combining collaborative filtering and content-based approaches
+                    </p>
+                    <div class="project-metrics">
+                        <div class="metric">
+                            <span class="metric-value">45%</span>
+                            <span class="metric-label">Engagement ↑</span>
+                        </div>
+                        <div class="metric">
+                            <span class="metric-value">32%</span>
+                            <span class="metric-label">Revenue ↑</span>
+                        </div>
+                        <div class="metric">
+                            <span class="metric-value">< 50ms</span>
+                            <span class="metric-label">Response</span>
+                        </div>
+                    </div>
+                    <div class="project-tech">
+                        <span>Python</span>
+                        <span>Surprise</span>
+                        <span>Redis</span>
+                        <span>Neo4j</span>
+                        <span>Docker</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/Rohit00sketch" target="_blank" class="project-link">
+                            <i class="fab fa-github"></i> Code
+                        </a>
+                        <a href="#" class="project-link">
+                            <i class="fas fa-book"></i> Tech Blog
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Dashboard -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Technical Skills</h2>
+            <p class="section-subtitle">Production-ready expertise across the ML & data stack</p>
+            
+            <div class="skills-dashboard">
+                <!-- Programming Languages -->
+                <div class="skill-category">
+                    <h3 class="category-title">
+                        <i class="fas fa-code"></i>
+                        Programming Languages
+                    </h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Python</span>
+                                <span class="skill-level">Expert</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="95"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">SQL</span>
+                                <span class="skill-level">Advanced</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="90"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">R</span>
+                                <span class="skill-level">Intermediate</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="75"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ML & AI -->
+                <div class="skill-category">
+                    <h3 class="category-title">
+                        <i class="fas fa-brain"></i>
+                        Machine Learning & AI
+                    </h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Scikit-learn</span>
+                                <span class="skill-level">Expert</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="95"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">TensorFlow / Keras</span>
+                                <span class="skill-level">Advanced</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="85"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">PyTorch</span>
+                                <span class="skill-level">Advanced</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="85"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">NLP (BERT, GPT)</span>
+                                <span class="skill-level">Advanced</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="80"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Computer Vision</span>
+                                <span class="skill-level">Intermediate</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="75"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Data Engineering -->
+                <div class="skill-category">
+                    <h3 class="category-title">
+                        <i class="fas fa-database"></i>
+                        Data Engineering & Tools
+                    </h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Pandas / NumPy</span>
+                                <span class="skill-level">Expert</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="95"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Apache Spark / Airflow</span>
+                                <span class="skill-level">Advanced</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="80"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">PostgreSQL / MySQL</span>
+                                <span class="skill-level">Advanced</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="85"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">MongoDB / Redis</span>
+                                <span class="skill-level">Intermediate</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="75"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cloud & DevOps -->
+                <div class="skill-category">
+                    <h3 class="category-title">
+                        <i class="fas fa-cloud"></i>
+                        Cloud & DevOps
+                    </h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">AWS (S3, EC2, Lambda)</span>
+                                <span class="skill-level">Advanced</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="85"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Docker / Kubernetes</span>
+                                <span class="skill-level">Intermediate</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="75"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Git / CI/CD</span>
+                                <span class="skill-level">Advanced</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="85"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Visualization -->
+                <div class="skill-category">
+                    <h3 class="category-title">
+                        <i class="fas fa-chart-bar"></i>
+                        Visualization & Analytics
+                    </h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Tableau / Power BI</span>
+                                <span class="skill-level">Advanced</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="85"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Matplotlib / Seaborn</span>
+                                <span class="skill-level">Expert</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="90"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Plotly / Dash</span>
+                                <span class="skill-level">Advanced</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="80"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Additional Skills -->
+                <div class="skill-category">
+                    <h3 class="category-title">
+                        <i class="fas fa-tools"></i>
+                        Additional Skills
+                    </h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">A/B Testing</span>
+                        <span class="skill-tag">Statistical Analysis</span>
+                        <span class="skill-tag">Feature Engineering</span>
+                        <span class="skill-tag">Model Deployment</span>
+                        <span class="skill-tag">MLOps</span>
+                        <span class="skill-tag">API Development</span>
+                        <span class="skill-tag">Agile/Scrum</span>
+                        <span class="skill-tag">Data Storytelling</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Timeline -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <h2 class="section-title">Professional Experience</h2>
+            <p class="section-subtitle">Building impactful ML solutions at scale</p>
+            
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3 class="job-title">Data Scientist</h3>
+                            <span class="job-duration">June 2025 - Present</span>
+                        </div>
+                        <p class="company-name">Go Digit Life Insurance Limited</p>
+                        <ul class="achievements">
+                            <li>
+                                <strong>Promoted to Data Scientist role</strong> after demonstrating strong technical capabilities and business impact as Graduate Trainee Engineer
+                            </li>
+                            <li>
+                                <strong>Developing predictive models</strong> for customer behavior analysis and risk assessment in the insurance domain
+                            </li>
+                            <li>
+                                <strong>Building ML pipelines</strong> for automated data processing and model deployment at scale
+                            </li>
+                            <li>
+                                <strong>Implementing advanced analytics solutions</strong> to drive data-driven decision making across business units
+                            </li>
+                            <li>
+                                <strong>Collaborating with cross-functional teams</strong> to translate business requirements into scalable ML solutions
+                            </li>
+                        </ul>
+                        <div class="tech-stack">
+                            <span>Python</span>
+                            <span>Machine Learning</span>
+                            <span>SQL</span>
+                            <span>Data Analysis</span>
+                            <span>AWS</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3 class="job-title">Graduate Trainee Engineer</h3>
+                            <span class="job-duration">June 2024 - June 2025</span>
+                        </div>
+                        <p class="company-name">Go Digit Life Insurance Limited</p>
+                        <ul class="achievements">
+                            <li>
+                                <strong>Started career</strong> as Graduate Trainee Engineer, gaining hands-on experience in data analysis and ML model development
+                            </li>
+                            <li>
+                                <strong>Analyzed large datasets</strong> to extract meaningful insights for business decision-making in the insurance sector
+                            </li>
+                            <li>
+                                <strong>Developed data pipelines</strong> and automation scripts to streamline data processing workflows
+                            </li>
+                            <li>
+                                <strong>Created analytical reports and dashboards</strong> for stakeholders to track key business metrics
+                            </li>
+                            <li>
+                                <strong>Contributed to ML projects</strong> focused on customer analytics and predictive modeling
+                            </li>
+                        </ul>
+                        <div class="tech-stack">
+                            <span>Python</span>
+                            <span>Pandas</span>
+                            <span>SQL</span>
+                            <span>Data Visualization</span>
+                            <span>Machine Learning</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3 class="job-title">Education & Certifications</h3>
+                            <span class="job-duration">2020 - 2024</span>
+                        </div>
+                        <ul class="achievements">
+                            <li><strong>B.Tech in Computer Science Engineering</strong> - C V Raman Global University</li>
+                            <li><strong>Specialized in Data Science & Machine Learning</strong> during undergraduate studies</li>
+                            <li><strong>Online Certifications:</strong> Machine Learning, Data Analytics, and Cloud Computing</li>
+                            <li><strong>Active participant</strong> in coding competitions and hackathons</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Coding Profiles -->
+    <section class="profiles">
+        <div class="container">
+            <h2 class="section-title">Coding Profiles</h2>
+            <p class="section-subtitle">Active problem solver and open-source contributor</p>
+            
+            <div class="profiles-grid">
+                <a href="https://github.com/Rohit00sketch" target="_blank" class="profile-card" rel="noopener noreferrer">
+                    <div class="profile-icon">
+                        <i class="fab fa-github"></i>
+                    </div>
+                    <h3 class="profile-name">GitHub</h3>
+                    <p class="profile-description">15+ repositories | Open source ML projects & contributions</p>
+                    <span class="profile-link">View Profile <i class="fas fa-arrow-right"></i></span>
+                </a>
+
+                <a href="https://www.linkedin.com/in/rohit-kumar-mlds/" target="_blank" class="profile-card" rel="noopener noreferrer">
+                    <div class="profile-icon">
+                        <i class="fab fa-linkedin"></i>
+                    </div>
+                    <h3 class="profile-name">LinkedIn</h3>
+                    <p class="profile-description">Professional network | Industry insights & connections</p>
+                    <span class="profile-link">Connect <i class="fas fa-arrow-right"></i></span>
+                </a>
+
+                <a href="https://leetcode.com/" target="_blank" class="profile-card" rel="noopener noreferrer">
+                    <div class="profile-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3 class="profile-name">LeetCode</h3>
+                    <p class="profile-description">500+ problems solved | Algorithm & DS practice</p>
+                    <span class="profile-link">View Solutions <i class="fas fa-arrow-right"></i></span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Let's Connect</h2>
+            <p class="section-subtitle">Open to exciting opportunities and collaborations</p>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Email</h3>
+                            <a href="mailto:rohit.kumar@example.com">rohit.kumar@example.com</a>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fab fa-linkedin"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>LinkedIn</h3>
+                            <a href="https://www.linkedin.com/in/rohit-kumar-mlds/" target="_blank" rel="noopener noreferrer">linkedin.com/in/rohit-kumar-mlds</a>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fab fa-github"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>GitHub</h3>
+                            <a href="https://github.com/Rohit00sketch" target="_blank" rel="noopener noreferrer">github.com/Rohit00sketch</a>
+                        </div>
+                    </div>
+
+                    <div class="contact-cta">
+                        <a href="Rohit_kumar_DataScientist.pdf" class="btn btn-primary" download>
+                            <i class="fas fa-download"></i> Download Resume
+                        </a>
+                    </div>
+                </div>
+
+                <div class="contact-form-wrapper">
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">
+                            <i class="fas fa-paper-plane"></i> Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2025 Rohit Kumar. Built with passion for data science.</p>
+                <div class="footer-links">
+                    <a href="https://github.com/Rohit00sketch" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/rohit-kumar-mlds/" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://leetcode.com/" target="_blank" rel="noopener noreferrer">
+                        <i class="fas fa-code"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
